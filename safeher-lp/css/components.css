@@ -1,0 +1,62 @@
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .9rem 2.2rem;
+  border-radius: var(--r-full);
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all var(--ease);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--primary {
+  background: var(--g-primary);
+  color: #fff;
+  box-shadow: 0 4px 20px var(--c-primary-glow);
+}
+
+.btn--primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 35px var(--c-primary-glow);
+}
+
+.btn--outline {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(8px);
+}
+
+.btn--outline:hover {
+  background: rgba(255, 255, 255, .08);
+  border-color: rgba(255, 255, 255, .4);
+  transform: translateY(-3px);
+}
+
+.btn--lg {
+  padding: 1.1rem 3rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+/* ===== GLASS CARD ===== */
+.glass-card {
+  background: var(--c-glass);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-lg);
+  backdrop-filter: blur(12px);
+  transition: all var(--ease);
+}
+
+.glass-card:hover {
+  background: var(--c-glass-hover);
+  border-color: rgba(255, 255, 255, .12);
+  transform: translateY(-6px);
+  box-shadow: var(--sh-md);
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SafeHer — Segurança feminina gratuita com alertas de emergência, compartilhamento de localização em tempo real e suporte 24/7 para mulheres.">
+  <title>SafeHer — Segurança Feminina</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__brand">🛡️ <span>SafeHer</span></a>
+      <input type="checkbox" id="menu-toggle" class="navbar__toggle-input" aria-label="Abrir menu">
+      <label for="menu-toggle" class="navbar__toggle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+      <div class="navbar__menu">
+        <div class="navbar__links">
+          <a href="#emergency" class="navbar__link">Sobre</a>
+          <a href="#features" class="navbar__link">Recursos</a>
+          <a href="#faq" class="navbar__link">Ajuda</a>
+        </div>
+        <div class="navbar__actions">
+          <a href="#" class="navbar__link navbar__link--login">Entrar</a>
+          <a href="#" class="btn btn--primary btn--sm">Criar Conta</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <h1 class="hero__title">Fique segura.<br><em>Sinta-se empoderada.</em></h1>
+      <p class="hero__subtitle">Sua companhia de segurança para mulheres, a qualquer hora, em qualquer lugar.</p>
+      <div class="hero__actions">
+        <a href="#download" class="btn btn--primary btn--lg">Comece agora. É GRÁTIS →</a>
+      </div>
+      <p class="hero__tagline">Gratuito e pensado para ajudar mulheres com apoio rápido quando mais precisarem.</p>
+    </div>
+  </header>
+
+  <!-- Tabs de navegação rápida -->
+  <div class="quick-tabs">
+    <div class="container">
+      <div class="quick-tabs__inner">
+        <a href="#emergency" class="quick-tabs__item quick-tabs__item--active">Emergência</a>
+        <a href="#features" class="quick-tabs__item">Dicas</a>
+        <a href="#resources" class="quick-tabs__item">Recursos</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Impact Data -->
+  <section class="impact">
+    <div class="container">
+      <div class="impact__wrapper glass-card">
+        <div class="impact__stat">
+          <span class="impact__number">6</span>
+          <span class="impact__unit">horas</span>
+        </div>
+        <div class="impact__content">
+          <h2 class="impact__title">A cada 6 horas, uma mulher é vítima de feminicídio no Brasil.</h2>
+          <p class="impact__desc">Não espere se tornar uma estatística. O SafeHer foi criado para garantir que você tenha uma rede de proteção imediata na palma da mão, antes que o pior aconteça.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Painel de Emergência -->
+  <section id="emergency" class="emergency">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Painel de Emergência</h2>
+      </div>
+      <div class="emergency__grid">
+        <article class="sos-card">
+          <div class="sos-card__icon">SOS</div>
+          <h3 class="sos-card__title">Acione ajuda imediata com um toque.</h3>
+        </article>
+        <div class="contacts-list">
+          <a href="tel:190" class="contact-card glass-card">
+            <span class="contact-card__name">Polícia Militar</span>
+            <span class="contact-card__sep">•</span>
+            <span class="contact-card__number">190</span>
+          </a>
+          <a href="tel:180" class="contact-card glass-card">
+            <span class="contact-card__name">Central da Mulher</span>
+            <span class="contact-card__sep">•</span>
+            <span class="contact-card__number">180</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Funcionalidades -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="features__grid">
+        <article class="feature-card glass-card">
+          <span class="feature-card__icon">🔔</span>
+          <h3 class="feature-card__title">Alertas de Emergência</h3>
+          <p class="feature-card__desc">Envie alertas instantâneos para seus contatos de confiança</p>
+        </article>
+        <article class="feature-card glass-card">
+          <span class="feature-card__icon">📍</span>
+          <h3 class="feature-card__title">Compartilhamento de Localização em Tempo Real</h3>
+          <p class="feature-card__desc">Compartilhe sua localização com quem você confia</p>
+        </article>
+        <article class="feature-card glass-card">
+          <span class="feature-card__icon">🛡️</span>
+          <h3 class="feature-card__title">Dicas de Segurança</h3>
+          <p class="feature-card__desc">Acesse dicas e recursos para se manter segura</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo -->
+  <section id="demo" class="demo">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Pré-demonstração do sistema</h2>
+        <p class="section-subtitle">Simulação de uso com as telas reais do SafeHer: Emergência, Dicas, Recursos e Locais Seguros.</p>
+      </div>
+
+      <div class="demo__phone">
+        <!-- CSS-only tabs via hidden radios -->
+        <input type="radio" name="demo-tab" id="demo-tab-1" class="demo__radio" checked>
+        <input type="radio" name="demo-tab" id="demo-tab-2" class="demo__radio">
+        <input type="radio" name="demo-tab" id="demo-tab-3" class="demo__radio">
+        <input type="radio" name="demo-tab" id="demo-tab-4" class="demo__radio">
+
+        <div class="demo__tabs">
+          <label for="demo-tab-1" class="demo__tab">Emergência</label>
+          <label for="demo-tab-2" class="demo__tab">Dicas</label>
+          <label for="demo-tab-3" class="demo__tab">Recursos</label>
+          <label for="demo-tab-4" class="demo__tab">Locais Seguros</label>
+        </div>
+
+        <div class="phone__screen">
+          <!-- Tab 1: Emergência -->
+          <div class="demo__panel demo__panel--1">
+            <div class="demo__panel-inner">
+              <h3>Painel de Emergência</h3>
+              <div class="demo__sos-icon">SOS</div>
+              <p>Toque para iniciar seu protocolo de emergência.</p>
+              <div class="demo__contacts">
+                <div class="demo__contact">
+                  <div>
+                    <span class="demo__contact-name">Polícia Militar</span>
+                    <span class="demo__contact-number">190</span>
+                  </div>
+                  <span class="demo__contact-action">Ligar</span>
+                </div>
+                <div class="demo__contact">
+                  <div>
+                    <span class="demo__contact-name">Central de Atendimento à Mulher</span>
+                    <span class="demo__contact-number">180</span>
+                  </div>
+                  <span class="demo__contact-action">Ligar</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Dicas -->
+          <div class="demo__panel demo__panel--2">
+            <div class="demo__panel-inner">
+              <h3>Dicas de Segurança</h3>
+              <p>Orientações importantes para o dia a dia.</p>
+              <div class="demo__tip-list">
+                <div class="demo__tip">💡 Compartilhe seu trajeto com alguém de confiança</div>
+                <div class="demo__tip">💡 Salve contatos de emergência no acesso rápido</div>
+                <div class="demo__tip">💡 Mantenha a localização ativa em áreas desconhecidas</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Recursos -->
+          <div class="demo__panel demo__panel--3">
+            <div class="demo__panel-inner">
+              <h3>Recursos Disponíveis</h3>
+              <p>Ferramentas de apoio e proteção.</p>
+              <div class="demo__tip-list">
+                <div class="demo__tip">🔔 Notificações Inteligentes</div>
+                <div class="demo__tip">👥 Rede de Apoio</div>
+                <div class="demo__tip">📞 Linha Direta 24/7</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 4: Locais Seguros -->
+          <div class="demo__panel demo__panel--4">
+            <div class="demo__panel-inner">
+              <h3>Locais Seguros</h3>
+              <p>Encontre pontos de apoio perto de você.</p>
+              <div class="demo__map-placeholder">
+                <span>📍</span>
+                <span>Mapa de locais seguros próximos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recursos Adicionais -->
+  <section id="resources" class="resources">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Recursos Adicionais</h2>
+        <p class="section-subtitle">Tudo que você precisa para se sentir segura e confiante, onde quer que esteja</p>
+      </div>
+      <div class="resources__grid">
+        <article class="resource-card glass-card">
+          <h4 class="resource-card__title">Notificações Inteligentes</h4>
+          <p class="resource-card__desc">Receba alertas personalizados baseados em sua localização e horário</p>
+        </article>
+        <article class="resource-card glass-card">
+          <h4 class="resource-card__title">Rede de Apoio</h4>
+          <p class="resource-card__desc">Conecte-se com uma comunidade de mulheres que se apoiam mutuamente</p>
+        </article>
+        <article class="resource-card glass-card">
+          <h4 class="resource-card__title">Linha Direta 24/7</h4>
+          <p class="resource-card__desc">Acesso a suporte e orientação sempre que você precisar</p>
+        </article>
+        <article class="resource-card glass-card">
+          <h4 class="resource-card__title">Privacidade Garantida</h4>
+          <p class="resource-card__desc">Seus dados são criptografados e mantidos em total sigilo</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQ SafeHer</span>
+        <h2 class="section-title">Perguntas Frequentes sobre Proteção e Prevenção</h2>
+        <p class="section-subtitle">Tire dúvidas sobre como o SafeHer ajuda mulheres a se proteger, prevenir riscos e agir com rapidez em situações de emergência.</p>
+      </div>
+      <div class="faq__list">
+        <details class="faq__item glass-card">
+          <summary class="faq__question">Como funcionam os alertas de emergência do SafeHer?</summary>
+          <div class="faq__answer"><p>Ao acionar o botão de emergência, o sistema envia imediatamente uma notificação para seus contatos de confiança com sua identificação e um aviso de risco para agilizar o apoio.</p></div>
+        </details>
+        <details class="faq__item glass-card">
+          <summary class="faq__question">Posso compartilhar minha localização em tempo real com pessoas específicas?</summary>
+          <div class="faq__answer"><p>Sim. Você escolhe quem recebe sua localização e por quanto tempo o compartilhamento fica ativo, mantendo o controle total sobre suas informações.</p></div>
+        </details>
+        <details class="faq__item glass-card">
+          <summary class="faq__question">O que são as notificações inteligentes de prevenção?</summary>
+          <div class="faq__answer"><p>São alertas preventivos baseados no seu contexto, como horário e região, para ajudar você a antecipar riscos e tomar decisões mais seguras no dia a dia.</p></div>
+        </details>
+        <details class="faq__item glass-card">
+          <summary class="faq__question">Existe suporte em situações de urgência?</summary>
+          <div class="faq__answer"><p>Sim. O SafeHer oferece canal de suporte 24/7 para orientação em momentos críticos, além de recursos para acionar rapidamente sua rede de apoio.</p></div>
+        </details>
+        <details class="faq__item glass-card">
+          <summary class="faq__question">Como o SafeHer protege meus dados pessoais?</summary>
+          <div class="faq__answer"><p>Os dados são protegidos com criptografia e políticas de privacidade alinhadas à LGPD, com acesso restrito e foco em sigilo e segurança das usuárias.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section id="download" class="cta">
+    <div class="container">
+      <h2 class="cta__title">Quer mais segurança no seu dia a dia?</h2>
+      <p class="cta__subtitle">O SafeHer é gratuito e foi criado para ajudar mulheres. Tenha acesso rápido a ajuda, orientação e recursos de proteção.</p>
+      <div class="cta__actions">
+        <a href="#" class="btn btn--primary btn--lg">Começar Agora</a>
+        <a href="#features" class="btn btn--outline">Saiba Mais</a>
+      </div>
+      <p class="cta__badges">✓ Feito para ajudá-las &nbsp;•&nbsp; ✓ Apoio rápido &nbsp;•&nbsp; ✓ Privacidade garantida</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3 class="footer__logo">🛡️ SafeHer</h3>
+          <p class="footer__desc">Empoderando mulheres com segurança e confiança em todo lugar.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Recursos</h4>
+          <ul class="footer__list">
+            <li><a href="#features">Alertas de Emergência</a></li>
+            <li><a href="#features">Localização em Tempo Real</a></li>
+            <li><a href="#features">Dicas de Segurança</a></li>
+            <li><a href="#features">Rede de Apoio</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Empresa</h4>
+          <ul class="footer__list">
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Carreiras</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Legal</h4>
+          <ul class="footer__list">
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Política de Cookies</a></li>
+            <li><a href="#">LGPD</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 SafeHer. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
