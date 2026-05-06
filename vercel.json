@@ -1,12 +1,13 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
+    {
       "source": "/",
-      "destination": "/safeher-lp/",
+      "destination": "/safeher-lp/index.html",
       "permanent": false
-      "source": "/",
-      "destination": "/safeher-lp/index.html"
-    },
+    }
+  ],
+  "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/safeher-lp/$1"
