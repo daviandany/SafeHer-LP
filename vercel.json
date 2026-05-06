@@ -1,8 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "cleanUrls": true,
-  "rewrites": [
-    {
+  "redirects": [
+      "source": "/",
+      "destination": "/safeher-lp/",
+      "permanent": false
       "source": "/",
       "destination": "/safeher-lp/index.html"
     },
