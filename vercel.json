@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/safeher-lp/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/safeher-lp/$1"
+    }
+  ]
+}
